@@ -1,0 +1,30 @@
+name: Decision
+description: A choice that must be made and recorded as an ADR
+title: "Decide: <choice>"
+labels: ["type: decision", "status: needs-decision"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What forces the decision now.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Each option with its main tradeoff.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Decision criteria
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] The decision is recorded in `docs/adr/` using the template
+        - [ ] The ADR index is updated
