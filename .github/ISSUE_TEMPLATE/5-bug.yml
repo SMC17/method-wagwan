@@ -1,0 +1,36 @@
+name: Bug
+description: Something is wrong in the engine, an adapter, the oracle, or a fork
+title: "Bug: <summary>"
+labels: ["type: bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What was expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Commands, commit hashes, and the trace identifier if one exists.
+    validations:
+      required: true
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - label: This could corrupt a recorded verdict or a published result
+        - label: This is a determinism failure, meaning output differs between identical runs
+  - type: input
+    id: version
+    attributes:
+      label: Engine commit and toolchain
+      placeholder: "engine abc1234, zig 0.16.0"

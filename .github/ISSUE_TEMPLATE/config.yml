@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Design discussion
+    url: https://github.com/SMC17/method-wagwan/discussions
+    about: Open-ended ideas that are not yet a feature, experiment, or decision belong in Discussions.
+  - name: Security report
+    url: https://github.com/SMC17/method-wagwan/security/advisories/new
+    about: Report vulnerabilities privately. Do not open a public issue.

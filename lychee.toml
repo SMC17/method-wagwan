@@ -1,0 +1,15 @@
+# Link checker configuration used by .github/workflows/docs.yml.
+
+max_retries = 3
+timeout = 20
+accept = ["200..=299", "429"]
+
+exclude = [
+  # Private repository links resolve only for signed-in collaborators.
+  "^https://github\\.com/SMC17/method-wagwan",
+  # Signed-in or bot-blocking hosts.
+  "^https://claude\\.ai/",
+  "^https://x\\.com/",
+  "^https://twitter\\.com/",
+  "^https://daily\\.dev/",
+]
