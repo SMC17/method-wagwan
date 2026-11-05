@@ -1,0 +1,31 @@
+name: Research question
+description: An open question that needs investigation before anything is built
+title: "Research: <question>"
+labels: ["type: research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The question stated so that it has a definite answer.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Which decision or design choice depends on the answer.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: How it will be answered
+      description: Sources, prototypes, or measurements, and what result would change the plan.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] Findings are posted on this issue with sources
+        - [ ] Any resulting decision is recorded as an ADR

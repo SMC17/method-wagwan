@@ -1,0 +1,8 @@
+# Every path is owned by the core maintainers until areas are split out.
+# See issue #12 for naming the second core maintainer.
+*                       @SMC17
+
+# Decisions and process changes always need a core maintainer.
+/docs/adr/              @SMC17
+/.github/               @SMC17
+/prereg/                @SMC17

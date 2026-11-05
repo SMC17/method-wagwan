@@ -1,0 +1,47 @@
+name: Experiment (pre-registered)
+description: A run whose metrics, thresholds, and targets are fixed before it executes
+title: "Experiment: <name>"
+labels: ["type: experiment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Results only count if this form, and the matching file under `prereg/`, are committed before the run starts. Any change after the run begins is recorded as a deviation, never as an edit.
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+    validations:
+      required: true
+  - type: textarea
+    id: targets
+    attributes:
+      label: Targets and cutoff split
+      description: Repositories, commit ranges, the model, and its training cutoff.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics, baselines, and pass threshold
+      description: Every metric with its baseline comparisons and the threshold that counts as a pass.
+    validations:
+      required: true
+  - type: textarea
+    id: budget
+    attributes:
+      label: Budget
+      description: Token and dollar ceiling.
+    validations:
+      required: true
+  - type: checkboxes
+    id: controls
+    attributes:
+      label: Controls
+      options:
+        - label: Headline results use only post-cutoff commits
+          required: true
+        - label: An obfuscation test for contamination is included
+          required: true
+        - label: The result will be published whether it passes or fails
+          required: true
