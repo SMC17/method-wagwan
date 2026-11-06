@@ -1,0 +1,40 @@
+name: Feature
+description: A new capability in the engine, an adapter, the oracle, or a fork
+title: "<short imperative title>"
+labels: ["type: feature"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What problem this solves and where it sits in the design.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Verifiable acceptance criteria as a checklist.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [core, protocol, adapter-zig, adapter-cpp, oracle, harden, saturate, predict, attack, branch, distill, schedule, trace, eval, fork, determinism, community]
+    validations:
+      required: true
+  - type: checkboxes
+    id: firewall
+    attributes:
+      label: Temporal firewall
+      options:
+        - label: This feature uses only signals computable at the replay clock, or it is evaluation-only (ADR 0003)
+          required: true
+  - type: textarea
+    id: refs
+    attributes:
+      label: References
+      description: Related docs, ADRs, and issues.
