@@ -26,14 +26,28 @@ Commit history is ground truth for software judgment in the same way price histo
 | [`docs/bun-fork-analysis.md`](docs/bun-fork-analysis.md) | What Bun's Zig fork offers and why the project forks from upstream Zig 0.16 instead |
 | [`docs/down-range-plan.md`](docs/down-range-plan.md) | The long sequence from engine to self-hosted fork to multi-language movement |
 | [`docs/adr/`](docs/adr/) | Architecture decision records |
+| [`docs/github-workflow.md`](docs/github-workflow.md) | How issues, labels, milestones, checks, and decisions are tracked |
+| [`prereg/`](prereg/) | Experiment pre-registrations, merged before any run begins |
+| [`scripts/`](scripts/) | Label sync, repository settings, and Project board setup |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How AI-assisted contributions are accepted here |
+| [`SECURITY.md`](SECURITY.md) | How to report vulnerabilities privately |
 
 The living design document, with diagrams, is at <https://claude.ai/artifact/WhdbtrnFdx9eQwud6X2yR6>. This repository is the durable record and the place where decisions are versioned.
 
 ## Status
 
-Planning. No engine code yet. Phase one begins with the replay substrate, the Zig adapter, the oracle layer, and a tracking fork of upstream Zig.
+Planning. No engine code yet. Work is tracked in issues grouped under one epic per phase, with milestones carrying each phase's pass gate.
+
+| Epic | Milestone |
+| --- | --- |
+| #1 Foundations | M0: Foundations |
+| #2 Phase 1, prove the signal | Phase 1 |
+| #3 Phase 2, prove the protocol | Phase 2 |
+| #4 Phase 3, prove the search | Phase 3 |
+| #5 Phase 4, open the movement | Phase 4 |
+| #6 Track, Bun's wins done right | Phase 3 and Down-range |
+| #7 Down-range, self-hosting fork and multi-language forks | Down-range |
 
 ## License
 
-The core and adapters are planned to ship under Apache 2.0. A license file will be added before the first code lands.
+[Apache 2.0](LICENSE).

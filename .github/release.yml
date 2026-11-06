@@ -1,0 +1,21 @@
+changelog:
+  exclude:
+    labels:
+      - dependencies
+  categories:
+    - title: Features
+      labels: ["type: feature"]
+    - title: Experiments and results
+      labels: ["type: experiment"]
+    - title: Decisions
+      labels: ["type: decision"]
+    - title: Fork
+      labels: ["area: fork", "area: determinism"]
+    - title: Fixes
+      labels: ["type: bug"]
+    - title: Documentation
+      labels: ["type: docs"]
+    - title: Infrastructure
+      labels: ["type: infra"]
+    - title: Other changes
+      labels: ["*"]

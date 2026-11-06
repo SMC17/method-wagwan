@@ -1,0 +1,25 @@
+name: Pull request
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+permissions:
+  contents: read
+
+jobs:
+  title:
+    name: PR title
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      # Squash merges use the PR title as the commit subject, so the title must follow the convention.
+      - name: Check conventional title
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          pattern='^(feat|fix|docs|chore|ci|refactor|test|perf|research|exp|adr)(\([a-z0-9-]+\))?!?: .+'
+          if [[ ! "$TITLE" =~ $pattern ]]; then
+            echo "::error::PR title must look like 'feat(core): add replay clock'. Allowed types are feat, fix, docs, chore, ci, refactor, test, perf, research, exp, adr."
+            exit 1
+          fi

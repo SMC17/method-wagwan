@@ -1,0 +1,43 @@
+[
+  { "name": "type: epic", "color": "3e1f8c", "description": "Tracks a group of issues that together deliver one outcome" },
+  { "name": "type: feature", "color": "1d76db", "description": "New capability in the engine, an adapter, or the fork" },
+  { "name": "type: research", "color": "5319e7", "description": "Open question that needs investigation before building" },
+  { "name": "type: experiment", "color": "8a63d2", "description": "Pre-registered run with metrics fixed before execution" },
+  { "name": "type: decision", "color": "0e8a16", "description": "Needs a decision recorded as an ADR" },
+  { "name": "type: bug", "color": "d73a4a", "description": "Something is wrong" },
+  { "name": "type: docs", "color": "0075ca", "description": "Documentation only" },
+  { "name": "type: infra", "color": "006b75", "description": "Build, CI, GitHub, or repository tooling" },
+
+  { "name": "area: core", "color": "c2e0c6", "description": "Language-neutral core, replay clock, scheduler" },
+  { "name": "area: protocol", "color": "c2e0c6", "description": "Adapter protocol and conformance suite" },
+  { "name": "area: adapter-zig", "color": "c2e0c6", "description": "Zig adapter" },
+  { "name": "area: adapter-cpp", "color": "c2e0c6", "description": "C and C++ adapter" },
+  { "name": "area: oracle", "color": "c2e0c6", "description": "Tests, sanitizers, fuzzing, differential runs" },
+  { "name": "area: harden", "color": "bfdadc", "description": "The harden primitive" },
+  { "name": "area: saturate", "color": "bfdadc", "description": "The saturate primitive" },
+  { "name": "area: predict", "color": "bfdadc", "description": "The predict primitive and its scoring" },
+  { "name": "area: attack", "color": "bfdadc", "description": "The attack primitive" },
+  { "name": "area: branch", "color": "bfdadc", "description": "The branch and translate primitives" },
+  { "name": "area: distill", "color": "bfdadc", "description": "The distill primitive and the skill firewall" },
+  { "name": "area: schedule", "color": "bfdadc", "description": "The schedule primitive" },
+  { "name": "area: trace", "color": "c2e0c6", "description": "session.trace and the content-addressed store" },
+  { "name": "area: eval", "color": "c2e0c6", "description": "Baselines, contamination controls, evaluation" },
+  { "name": "area: fork", "color": "fef2c0", "description": "The project's language forks" },
+  { "name": "area: determinism", "color": "fef2c0", "description": "Determinism oracle and reproducible builds" },
+  { "name": "area: community", "color": "f9d0c4", "description": "Registry, bounties, governance, adapters by the community" },
+  { "name": "area: github", "color": "ededed", "description": "Repository process and tooling" },
+
+  { "name": "priority: P0", "color": "b60205", "description": "Blocks the current phase gate" },
+  { "name": "priority: P1", "color": "d93f0b", "description": "Needed for the current phase" },
+  { "name": "priority: P2", "color": "fbca04", "description": "Useful, not blocking" },
+
+  { "name": "status: blocked", "color": "000000", "description": "Waiting on another issue or an outside party" },
+  { "name": "status: needs-decision", "color": "d4c5f9", "description": "Cannot proceed until a decision is made" },
+  { "name": "status: needs-maintainer", "color": "d4c5f9", "description": "Needs an outside maintainer to agree or respond" },
+
+  { "name": "track: bun-done-right", "color": "f9a03f", "description": "Re-implementing what made Bun's fork fast, deterministically, on upstream Zig 0.16" },
+
+  { "name": "good first issue", "color": "7057ff", "description": "Good for newcomers" },
+  { "name": "help wanted", "color": "008672", "description": "Extra attention is wanted" },
+  { "name": "dependencies", "color": "0366d6", "description": "Dependency updates" }
+]
