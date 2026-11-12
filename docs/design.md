@@ -1,6 +1,6 @@
 # Design
 
-This is the condensed engineering design. The living document with diagrams is at <https://claude.ai/artifact/WhdbtrnFdx9eQwud6X2yR6>, and this file is updated whenever a decision there changes.
+This is the engineering design of record. Diagrams will be added here as the engine lands; decisions that change this file are recorded as ADRs.
 
 ## Architecture
 

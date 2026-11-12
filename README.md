@@ -32,7 +32,7 @@ Commit history is ground truth for software judgment in the same way price histo
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How AI-assisted contributions are accepted here |
 | [`SECURITY.md`](SECURITY.md) | How to report vulnerabilities privately |
 
-The living design document, with diagrams, is at <https://claude.ai/artifact/WhdbtrnFdx9eQwud6X2yR6>. This repository is the durable record and the place where decisions are versioned.
+The design lives in [docs/design.md](docs/design.md); decisions are versioned as ADRs in [docs/adr](docs/adr/). Diagrams will be added to the docs as the engine lands.
 
 ## Status
 
