@@ -1,6 +1,6 @@
 # 0006. Replay zig-h3 first, and treat a self-maintained target as a known bias
 
-**Status:** Proposed
+**Status:** Superseded by 0007, 2026-11-12
 
 **Decision issue:** #13
 
