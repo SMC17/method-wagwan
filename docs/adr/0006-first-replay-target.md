@@ -32,6 +32,14 @@ Phase one replays SMC17/zig-h3. The maintainer of zig-h3 is the maintainer of th
 ## Consequences
 
 - **Known bias.** The maintainer of the target also designed the engine. Findings the maintainer "accepts" carry less weight than an outside maintainer's acceptance. The Phase one write-up must say this plainly and report the outside confirmation run separately.
-- **Short history.** 52 commits over six months limits statistical power. The pre-registration in #15 must state the minimum detectable effect for this sample and must not claim more.
+- **Short history.** 52 commits, of which 50 landed in six days (2026-05-13 to 2026-05-19) and 2 in November 2026. This limits statistical power severely. The pre-registration in #15 must state the minimum detectable effect for this sample and must not claim more.
 - **Cutoff split.** Most zig-h3 history predates the cutoffs of current models, so contamination controls in #15 matter more than usual.
 - Closes the selection half of #13; the outside opt-in stays open as a follow-up.
+
+## Correction (2026-11-12)
+
+The first version of this ADR described zig-h3's history as "52 commits over six months". Measured from the default branch: 50 commits between 2026-05-13 and 2026-05-19, then 2 commits on 2026-11-12. Commits after 2026-07-01: 2. Fix or revert commits in the whole history: about 2.
+
+None of the other self-maintained candidates is materially better. Commits after 2026-07-01 / distinct days / fix commits: logic-zig 58 / 6 / 3, tokenizers-zig 13 / 4 / 5, faiss-zig 12 / 6 / 1, zag 39 / 4 / 1. Each was written in short agent-driven bursts.
+
+Consequence: zig-h3 can serve as a smoke target for the replay substrate (#17) and the Zig adapter, but it cannot support a pre-registered foresight result. The headline Phase one target needs an outside Zig repository with hundreds of post-cutoff commits and a real fix history. That choice is tracked in a follow-up decision issue, and #15 must not be merged until it is made.
