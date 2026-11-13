@@ -1,5 +1,7 @@
 # method-wagwan
 
+**[Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Issues](https://github.com/SMC17/method-wagwan/issues) · [All SMC17 work](https://github.com/users/SMC17/projects/16)**
+
 A walk-forward replay engine for code. It replays a repository's git history from the first commit forward, lets language models propose tests, forecasts, and optimizations using only what existed at each moment, and lets deterministic programs decide what is kept, so that every result it reports can be rerun and checked by a skeptic.
 
 The engine is written in Zig, replays Zig first, and is designed from the start to grow into a language-neutral platform in which each language joins through an adapter, gains a project fork for verified language-level improvements, and eventually hosts an engine built on that fork.
