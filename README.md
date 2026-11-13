@@ -1,6 +1,6 @@
 # method-wagwan
 
-**[Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Issues](https://github.com/SMC17/method-wagwan/issues) · [All SMC17 work](https://github.com/users/SMC17/projects/16)**
+**[Status](STATUS.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Issues](https://github.com/SMC17/method-wagwan/issues) · [All SMC17 work](https://github.com/users/SMC17/projects/16)**
 
 A walk-forward replay engine for code. It replays a repository's git history from the first commit forward, lets language models propose tests, forecasts, and optimizations using only what existed at each moment, and lets deterministic programs decide what is kept, so that every result it reports can be rerun and checked by a skeptic.
 
