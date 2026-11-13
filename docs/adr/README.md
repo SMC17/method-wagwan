@@ -9,3 +9,4 @@ Each record states one decision, the context that forced it, and its consequence
 | [0003](0003-temporal-firewall.md) | Search signals and evaluation signals are separated in code | Accepted |
 | [0004](0004-fork-base-upstream-zig.md) | The Zig fork starts from upstream Zig 0.16, not Bun's fork | Accepted |
 | [0005](0005-dual-build-rule.md) | The engine keeps building on upstream until the fork proves itself | Accepted |
+| [0006](0006-first-replay-target.md) | Replay zig-h3 first, and treat a self-maintained target as a known bias | Proposed |
