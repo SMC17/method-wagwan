@@ -38,7 +38,7 @@ The design lives in [docs/design.md](docs/design.md); decisions are versioned as
 
 ## Status
 
-Planning. No engine code yet. Work is tracked in issues grouped under one epic per phase, with milestones carrying each phase's pass gate.
+Core deterministic replay substrate implemented in Zig (`src/store.zig`, `src/firewall.zig`, `src/replay.zig`, `src/main.zig`; `zig build test --summary all` passes 8/8 unit tests). Phase 1 adapter and empirical runs are tracked in issues grouped under one epic per phase, with milestones carrying each phase's pass gate.
 
 | Epic | Milestone |
 | --- | --- |
