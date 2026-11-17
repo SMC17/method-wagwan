@@ -36,6 +36,18 @@ pub fn build(b: *std.Build) void {
     const run_step = b.step("run", "Run the wagwan deterministic replay demo");
     run_step.dependOn(&run_cmd.step);
 
+    const score_mod = b.createModule(.{
+        .root_source_file = b.path("src/score_main.zig"),
+        .target = target,
+        .optimize = optimize,
+    });
+    score_mod.addImport("wagwan", mod);
+    const score_exe = b.addExecutable(.{ .name = "wagwan-score", .root_module = score_mod });
+    b.installArtifact(score_exe);
+    const score_run = b.addRunArtifact(score_exe);
+    if (b.args) |args| score_run.addArgs(args);
+    b.step("score", "Score a CSV of forecasts: zig build score -- forecasts.csv").dependOn(&score_run.step);
+
     const test_mod = b.createModule(.{
         .root_source_file = b.path("src/root.zig"),
         .target = target,
